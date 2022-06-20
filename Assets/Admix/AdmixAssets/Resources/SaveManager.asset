@@ -1,0 +1,447 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1407220144, guid: abf3c058d94959640bec02372a894b38, type: 3}
+  m_Name: SaveManager
+  m_EditorClassIdentifier: 
+  fileCache:
+    stamp: by 625c3273051e4300093db8f9 at samedi 23 avril 2022 13:31:16
+    appId: 625c50e2622d6500094810b2
+    appName: Clickn' Circles
+    versionId: 625c50e2622d6500094810b3
+    versionStatus: 0
+    versionSeq: 0
+    sdkRev: 2210
+    scenesList:
+    - sceneName: MainMenu
+      id: 625c5172f17f2a0009132a0d
+      currentScenePath: Assets/Scenes/MainMenu.unity
+      pathsHistory:
+      - Assets/Scenes/MainMenu.unity
+      placementsList:
+      - isSavedPlacement: 1
+        invalidReason: 
+        modelKey: 5ee7e9437cea8d42a8b60ac2
+        idInFile: 1593461490
+        placementType: 0
+        placementId: 625c51767eb7800009cc922b
+        placementName: d05pu0h0P2eXTkrXVZRr
+        placementDisplayName: MainMenu Banner
+        sceneId: 625c5172f17f2a0009132a0d
+        textureResolution: {x: 728, y: 90}
+      - isSavedPlacement: 1
+        invalidReason: 
+        modelKey: 5ee7e9587cea8d42a8b60ac3
+        idInFile: 758818822
+        placementType: 0
+        placementId: 625c5589fa84f700092ef565
+        placementName: c5yU6pIilguMLTA0iZpV
+        placementDisplayName: MainMenu BannerLeft
+        sceneId: 625c5172f17f2a0009132a0d
+        textureResolution: {x: 160, y: 600}
+      - isSavedPlacement: 1
+        invalidReason: 
+        modelKey: 5ee7e9587cea8d42a8b60ac3
+        idInFile: 1216057266
+        placementType: 0
+        placementId: 625c5589fa84f700092ef566
+        placementName: 2t37RwrPcNxu5H6wBhOJ
+        placementDisplayName: MainMenu BannerRight
+        sceneId: 625c5172f17f2a0009132a0d
+        textureResolution: {x: 160, y: 600}
+    - sceneName: _AdmixDynamicPlacements_
+      id: 625c5173f17f2a0009132a0e
+      currentScenePath: 
+      pathsHistory: []
+      placementsList:
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e8d47cea8d42a8b60ac0
+        idInFile: 0
+        placementType: 0
+        placementId: 625c51767eb7800009cc922c
+        placementName: db_6x5
+        placementDisplayName: db_6x5
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e90e7cea8d42a8b60ac1
+        idInFile: 0
+        placementType: 0
+        placementId: 625c51767eb7800009cc922d
+        placementName: db_32x5
+        placementDisplayName: db_32x5
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9437cea8d42a8b60ac2
+        idInFile: 0
+        placementType: 0
+        placementId: 625c51767eb7800009cc922e
+        placementName: db_364x45
+        placementDisplayName: db_364x45
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9587cea8d42a8b60ac3
+        idInFile: 0
+        placementType: 0
+        placementId: 625c51767eb7800009cc922f
+        placementName: db_4x15
+        placementDisplayName: db_4x15
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9657cea8d42a8b60ac4
+        idInFile: 0
+        placementType: 0
+        placementId: 625c51767eb7800009cc9230
+        placementName: db_1x2
+        placementDisplayName: db_1x2
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9757cea8d42a8b60ac5
+        idInFile: 0
+        placementType: 0
+        placementId: 625c51767eb7800009cc9231
+        placementName: db_97x25
+        placementDisplayName: db_97x25
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9e47cea8d42a8b60ac6
+        idInFile: 0
+        placementType: 1
+        placementId: 625c51767eb7800009cc9232
+        placementName: dv_4x3
+        placementDisplayName: dv_4x3
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9fb7cea8d42a8b60ac7
+        idInFile: 0
+        placementType: 1
+        placementId: 625c51767eb7800009cc9233
+        placementName: dv_16x9
+        placementDisplayName: dv_16x9
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+  projectScanCache:
+    stamp: 
+    appId: 625c50e2622d6500094810b2
+    appName: Clickn' Circles
+    versionId: 
+    versionStatus: 0
+    versionSeq: 0
+    sdkRev: 2210
+    scenesList:
+    - sceneName: MainMenu
+      id: 625c5172f17f2a0009132a0d
+      currentScenePath: Assets/Scenes/MainMenu.unity
+      pathsHistory: []
+      placementsList:
+      - isSavedPlacement: 1
+        invalidReason: 
+        modelKey: 5ee7e9437cea8d42a8b60ac2
+        idInFile: 1593461490
+        placementType: 0
+        placementId: 625c51767eb7800009cc922b
+        placementName: d05pu0h0P2eXTkrXVZRr
+        placementDisplayName: MainMenu Banner
+        sceneId: 625c5172f17f2a0009132a0d
+        textureResolution: {x: 728, y: 90}
+      - isSavedPlacement: 1
+        invalidReason: 
+        modelKey: 5ee7e9587cea8d42a8b60ac3
+        idInFile: 758818822
+        placementType: 0
+        placementId: 625c5589fa84f700092ef565
+        placementName: c5yU6pIilguMLTA0iZpV
+        placementDisplayName: MainMenu BannerLeft
+        sceneId: 625c5172f17f2a0009132a0d
+        textureResolution: {x: 160, y: 600}
+      - isSavedPlacement: 1
+        invalidReason: 
+        modelKey: 5ee7e9587cea8d42a8b60ac3
+        idInFile: 1216057266
+        placementType: 0
+        placementId: 625c5589fa84f700092ef566
+        placementName: 2t37RwrPcNxu5H6wBhOJ
+        placementDisplayName: MainMenu BannerRight
+        sceneId: 625c5172f17f2a0009132a0d
+        textureResolution: {x: 160, y: 600}
+  remoteCache:
+    stamp: 
+    appId: 625c50e2622d6500094810b2
+    appName: Clickn' Circles
+    versionId: 625c50e2622d6500094810b3
+    versionStatus: 0
+    versionSeq: 0
+    sdkRev: 
+    scenesList:
+    - sceneName: MainMenu
+      id: 625c5172f17f2a0009132a0d
+      currentScenePath: 
+      pathsHistory: []
+      placementsList:
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9437cea8d42a8b60ac2
+        idInFile: 0
+        placementType: 0
+        placementId: 625c51767eb7800009cc922b
+        placementName: d05pu0h0P2eXTkrXVZRr
+        placementDisplayName: MainMenu Banner
+        sceneId: 625c5172f17f2a0009132a0d
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9587cea8d42a8b60ac3
+        idInFile: 0
+        placementType: 0
+        placementId: 625c5589fa84f700092ef565
+        placementName: c5yU6pIilguMLTA0iZpV
+        placementDisplayName: MainMenu BannerLeft
+        sceneId: 625c5172f17f2a0009132a0d
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9587cea8d42a8b60ac3
+        idInFile: 0
+        placementType: 0
+        placementId: 625c5589fa84f700092ef566
+        placementName: 2t37RwrPcNxu5H6wBhOJ
+        placementDisplayName: MainMenu BannerRight
+        sceneId: 625c5172f17f2a0009132a0d
+        textureResolution: {x: 0, y: 0}
+    - sceneName: _AdmixDynamicPlacements_
+      id: 625c5173f17f2a0009132a0e
+      currentScenePath: 
+      pathsHistory: []
+      placementsList:
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e8d47cea8d42a8b60ac0
+        idInFile: 0
+        placementType: 0
+        placementId: 625c51767eb7800009cc922c
+        placementName: db_6x5
+        placementDisplayName: db_6x5
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e90e7cea8d42a8b60ac1
+        idInFile: 0
+        placementType: 0
+        placementId: 625c51767eb7800009cc922d
+        placementName: db_32x5
+        placementDisplayName: db_32x5
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9437cea8d42a8b60ac2
+        idInFile: 0
+        placementType: 0
+        placementId: 625c51767eb7800009cc922e
+        placementName: db_364x45
+        placementDisplayName: db_364x45
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9587cea8d42a8b60ac3
+        idInFile: 0
+        placementType: 0
+        placementId: 625c51767eb7800009cc922f
+        placementName: db_4x15
+        placementDisplayName: db_4x15
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9657cea8d42a8b60ac4
+        idInFile: 0
+        placementType: 0
+        placementId: 625c51767eb7800009cc9230
+        placementName: db_1x2
+        placementDisplayName: db_1x2
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9757cea8d42a8b60ac5
+        idInFile: 0
+        placementType: 0
+        placementId: 625c51767eb7800009cc9231
+        placementName: db_97x25
+        placementDisplayName: db_97x25
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9e47cea8d42a8b60ac6
+        idInFile: 0
+        placementType: 1
+        placementId: 625c51767eb7800009cc9232
+        placementName: dv_4x3
+        placementDisplayName: dv_4x3
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9fb7cea8d42a8b60ac7
+        idInFile: 0
+        placementType: 1
+        placementId: 625c51767eb7800009cc9233
+        placementName: dv_16x9
+        placementDisplayName: dv_16x9
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+  remotePostSaveCache:
+    stamp: 
+    appId: 625c50e2622d6500094810b2
+    appName: Clickn' Circles
+    versionId: 625c50e2622d6500094810b3
+    versionStatus: 0
+    versionSeq: 0
+    sdkRev: 
+    scenesList:
+    - sceneName: MainMenu
+      id: 625c5172f17f2a0009132a0d
+      currentScenePath: 
+      pathsHistory: []
+      placementsList:
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9437cea8d42a8b60ac2
+        idInFile: 0
+        placementType: 0
+        placementId: 625c51767eb7800009cc922b
+        placementName: d05pu0h0P2eXTkrXVZRr
+        placementDisplayName: MainMenu Banner
+        sceneId: 625c5172f17f2a0009132a0d
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9587cea8d42a8b60ac3
+        idInFile: 0
+        placementType: 0
+        placementId: 625c5589fa84f700092ef565
+        placementName: c5yU6pIilguMLTA0iZpV
+        placementDisplayName: MainMenu BannerLeft
+        sceneId: 625c5172f17f2a0009132a0d
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9587cea8d42a8b60ac3
+        idInFile: 0
+        placementType: 0
+        placementId: 625c5589fa84f700092ef566
+        placementName: 2t37RwrPcNxu5H6wBhOJ
+        placementDisplayName: MainMenu BannerRight
+        sceneId: 625c5172f17f2a0009132a0d
+        textureResolution: {x: 0, y: 0}
+    - sceneName: _AdmixDynamicPlacements_
+      id: 625c5173f17f2a0009132a0e
+      currentScenePath: 
+      pathsHistory: []
+      placementsList:
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e8d47cea8d42a8b60ac0
+        idInFile: 0
+        placementType: 0
+        placementId: 625c51767eb7800009cc922c
+        placementName: db_6x5
+        placementDisplayName: db_6x5
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e90e7cea8d42a8b60ac1
+        idInFile: 0
+        placementType: 0
+        placementId: 625c51767eb7800009cc922d
+        placementName: db_32x5
+        placementDisplayName: db_32x5
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9437cea8d42a8b60ac2
+        idInFile: 0
+        placementType: 0
+        placementId: 625c51767eb7800009cc922e
+        placementName: db_364x45
+        placementDisplayName: db_364x45
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9587cea8d42a8b60ac3
+        idInFile: 0
+        placementType: 0
+        placementId: 625c51767eb7800009cc922f
+        placementName: db_4x15
+        placementDisplayName: db_4x15
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9657cea8d42a8b60ac4
+        idInFile: 0
+        placementType: 0
+        placementId: 625c51767eb7800009cc9230
+        placementName: db_1x2
+        placementDisplayName: db_1x2
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9757cea8d42a8b60ac5
+        idInFile: 0
+        placementType: 0
+        placementId: 625c51767eb7800009cc9231
+        placementName: db_97x25
+        placementDisplayName: db_97x25
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9e47cea8d42a8b60ac6
+        idInFile: 0
+        placementType: 1
+        placementId: 625c51767eb7800009cc9232
+        placementName: dv_4x3
+        placementDisplayName: dv_4x3
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+      - isSavedPlacement: 0
+        invalidReason: 
+        modelKey: 5ee7e9fb7cea8d42a8b60ac7
+        idInFile: 0
+        placementType: 1
+        placementId: 625c51767eb7800009cc9233
+        placementName: dv_16x9
+        placementDisplayName: dv_16x9
+        sceneId: 625c5173f17f2a0009132a0e
+        textureResolution: {x: 0, y: 0}
+  placementsToHide: []
