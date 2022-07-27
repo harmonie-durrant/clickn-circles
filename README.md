@@ -6,7 +6,7 @@ The aim of the game is to click the circles that aren't red to gain as many poin
 
 ## Installation
 
-PC: (Version 1.0)
+PC: (Version 2.0)
 To play the game, simply open the BUILD - OUT folder and extract and run the .exe file.
 
 Android: (Version 3.0)
