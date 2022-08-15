@@ -3527,6 +3527,7 @@ MonoBehaviour:
   hishscoretext: {fileID: 986721736}
   BadCircle_prefab: {fileID: 8023927134097008395, guid: e447b8a17ccbdca4db4294364d5e63fa, type: 3}
   Circle_prefab: {fileID: 8243228256541507559, guid: 3332c1d216ad61f44a33950598ecbb65, type: 3}
+  PowerCircle_prefab: {fileID: 8243228256541507559, guid: a86128e63e8b81c43ba56dda2175a5cc, type: 3}
 --- !u!4 &1776688516
 Transform:
   m_ObjectHideFlags: 0

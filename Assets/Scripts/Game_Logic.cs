@@ -22,13 +22,16 @@ public class Game_Logic : MonoBehaviour
 
     //audio
     AudioSource dingAudio;
+    AudioSource dingAudioAlt;
     AudioSource boomAudio;
 
     // Circle Prefabs
     public GameObject BadCircle_prefab;
     public GameObject Circle_prefab;
+    public GameObject PowerCircle_prefab;
     private GameObject BadCircle;
     private GameObject GoodCircle;
+    private GameObject PowerCircle;
 
     IEnumerator Countdown() {
         for(;;) {
@@ -56,8 +59,11 @@ public class Game_Logic : MonoBehaviour
         score = 0;
         StartCoroutine("Countdown");
         dingAudio = GameObject.Find("Ding Sound").GetComponent<AudioSource>();
+        dingAudioAlt = GameObject.Find("Ding Sound Alt").GetComponent<AudioSource>();
+        boomAudio = GameObject.Find("Boom Sound").GetComponent<AudioSource>();
         Bad_Circle.UnPause();
         Circle.UnPause();
+        // PowerCircle.UnPause();
         SpawnCircles();
     }
 
@@ -68,28 +74,51 @@ public class Game_Logic : MonoBehaviour
         timer = lives;
         score = 0;
         dingAudio = GameObject.Find("Ding Sound").GetComponent<AudioSource>();
+        dingAudioAlt = GameObject.Find("Ding Sound Alt").GetComponent<AudioSource>();
+        boomAudio = GameObject.Find("Boom Sound").GetComponent<AudioSource>();
         Bad_Circle.UnPause();
         Circle.UnPause();
+        // PowerCircle.UnPause();
         SpawnCircles();
     }
     
     void ClearCircles()
     {
         Destroy(GoodCircle);
+        //if PowerCircle exists, destroy it
+        if (PowerCircle != null)
+        {
+            Destroy(PowerCircle);
+        }
         Destroy(BadCircle);
     }
 
     void SpawnCircles()
     {
         ClearCircles();
+        Vector3 loc1;
+        Vector3 loc2;
+        Vector3 loc3;
         // pick two locations that are more than 2f apart
-        Vector3 loc1 = new Vector3(Random.Range(-8f, 8f), Random.Range(-4f, 3f), 0);
-        Vector3 loc2 = new Vector3(Random.Range(-8f, 8f), Random.Range(-4f, 3f), 0);
+        loc1 = new Vector3(Random.Range(-8f, 8f), Random.Range(-4f, 3f), 0);
+        loc2 = new Vector3(Random.Range(-8f, 8f), Random.Range(-4f, 3f), 0);
         while (Vector3.Distance(loc1, loc2) < 2f) {
             loc2 = new Vector3(Random.Range(-8f, 8f), Random.Range(-4f, 3f), 0);
         }
+        // make loc3 only 22% times
+        if (Random.Range(0, 100) >= 88) {
+            loc3 = new Vector3(Random.Range(-8f, 8f), Random.Range(-4f, 3f), 0);
+            while (Vector3.Distance(loc1, loc3) < 2f || Vector3.Distance(loc2, loc3) < 2f) {
+                loc3 = new Vector3(Random.Range(-8f, 8f), Random.Range(-4f, 3f), 0);
+            }
+        } else {
+            loc3 = new Vector3(15,15,1);
+        }
         GoodCircle = Instantiate(Circle_prefab, loc1, Quaternion.identity);
         BadCircle = Instantiate(BadCircle_prefab, loc2, Quaternion.identity);
+        if(loc3.y != 1) {
+            PowerCircle = Instantiate(PowerCircle_prefab, loc3, Quaternion.identity);
+        }
     }
 
     void HitBackground()
@@ -107,6 +136,16 @@ public class Game_Logic : MonoBehaviour
         score += 1;
         UpdateUI();
         SpawnCircles();
+        // play sound
+        dingAudio.Play();
+    }
+
+    void HitPowerCircle()
+    {
+        score += 2;
+        UpdateUI();
+        SpawnCircles();
+        dingAudioAlt.Play();
     }
 
     public void HitBadCircle()
@@ -118,6 +157,7 @@ public class Game_Logic : MonoBehaviour
         score -= 2;
         UpdateUI();
         SpawnCircles();
+        boomAudio.Play();
     }
 
     void UpdateUI()
@@ -144,6 +184,7 @@ public class Game_Logic : MonoBehaviour
         {
             Bad_Circle.UnPause();
             Circle.UnPause();
+            //PowerCircle.UnPause();
             is_Paused = false;
             Time.timeScale = 1;
             if (is_Timed)
@@ -192,6 +233,10 @@ public class Game_Logic : MonoBehaviour
                 else if (BadCircle.GetComponent<CircleCollider2D>().bounds.Contains(worldPos))
                 {
                     HitBadCircle();
+                }
+                else if (PowerCircle.GetComponent<CircleCollider2D>().bounds.Contains(worldPos))
+                {
+                    HitPowerCircle();
                 }
                 else
                 {

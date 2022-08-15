@@ -25,4 +25,4 @@ Download from itch.io or the play store using the links below:
 
 ## DEMO
 
-<img src="https://play-lh.googleusercontent.com/N6FdzOdJJ9Ax6BqhanYMSHV1SFHnNqyRjbMxIEgRXieCwwX2129owQhGNTb_8bvlzTha=w526-h296-rw"/>
+<img src="https://play-lh.googleusercontent.com/RBMTYu4cpoFZ-X-0H91usPB8dmOExPzjpYSlPEsp7O5LPJMVSC9NkAo2uDb9lUan0Ks3=w2560-h1440-rw"/>

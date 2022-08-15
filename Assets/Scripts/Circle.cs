@@ -18,13 +18,8 @@ public class Circle : MonoBehaviour
         // set a random size for the circle
         float size = Random.Range(2.5f, 4f);
         transform.localScale = new Vector3(size, size, size);
-        // set a random color for the circle
-        float c = Random.Range(0f, 1f);
-        if (c < 0.5f) {
-            GetComponent<Renderer>().material.color = Color.green;
-        } else {
-            GetComponent<Renderer>().material.color = Color.cyan;
-        }
+        // set color
+        GetComponent<Renderer>().material.color = Color.green;
     }
 
     public static void Pause()
