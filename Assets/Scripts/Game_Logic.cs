@@ -16,6 +16,8 @@ public class Game_Logic : MonoBehaviour
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI hishscoretext;
 
+    public static int GM_NO = 0;
+
     //gamemode
     public static bool is_Timed;
     private bool is_Paused = false;
@@ -56,6 +58,13 @@ public class Game_Logic : MonoBehaviour
         Time.timeScale = 1;
         is_Timed = true;
         timer = time;
+        if(time == 30){
+            GM_NO = 0;
+        } else if(time == 60) {
+            GM_NO = 1;
+        } else {
+            GM_NO = 2;
+        }
         score = 0;
         StartCoroutine("Countdown");
         dingAudio = GameObject.Find("Ding Sound").GetComponent<AudioSource>();
@@ -72,6 +81,13 @@ public class Game_Logic : MonoBehaviour
         Time.timeScale = 1;
         is_Timed = false;
         timer = lives;
+        if(lives == 3){
+            GM_NO = 3;
+        } else if(lives == 6) {
+            GM_NO = 4;
+        } else {
+            GM_NO = 5;
+        }
         score = 0;
         dingAudio = GameObject.Find("Ding Sound").GetComponent<AudioSource>();
         dingAudioAlt = GameObject.Find("Ding Sound Alt").GetComponent<AudioSource>();
@@ -123,6 +139,7 @@ public class Game_Logic : MonoBehaviour
 
     void HitBackground()
     {
+        PlayerPrefs.SetInt("BG_HITS_"+GM_NO, PlayerPrefs.GetInt("BG_HITS_"+GM_NO)+1);
         if (!is_Timed)
         {
             timer -= 1;
@@ -133,6 +150,7 @@ public class Game_Logic : MonoBehaviour
 
     void HitGoodCircle()
     {
+        PlayerPrefs.SetInt("CIRCLE_HITS_"+GM_NO, PlayerPrefs.GetInt("CIRCLE_HITS_"+GM_NO)+1);
         score += 1;
         UpdateUI();
         SpawnCircles();
@@ -142,6 +160,7 @@ public class Game_Logic : MonoBehaviour
 
     void HitPowerCircle()
     {
+        PlayerPrefs.SetInt("PW_CIRCLE_HITS_"+GM_NO, PlayerPrefs.GetInt("PW_CIRCLE_HITS_"+GM_NO)+1);
         score += 2;
         UpdateUI();
         SpawnCircles();
@@ -150,6 +169,7 @@ public class Game_Logic : MonoBehaviour
 
     public void HitBadCircle()
     {
+        PlayerPrefs.SetInt("BAD_CIRCLE_HITS_"+GM_NO, PlayerPrefs.GetInt("BAD_CIRCLE_HITS_"+GM_NO)+1);
         if (!is_Timed)
         {
             timer -= 1;
@@ -163,10 +183,10 @@ public class Game_Logic : MonoBehaviour
     void UpdateUI()
     {
         scoreText.text = "Score: " + score;
-        hishscoretext.text = "High Score: " + PlayerPrefs.GetInt("HighScore");
-        if (score > PlayerPrefs.GetInt("HighScore"))
+        hishscoretext.text = "High Score: " + PlayerPrefs.GetInt("HighScore_"+GM_NO);
+        if (score > PlayerPrefs.GetInt("HighScore_"+GM_NO))
         {
-            PlayerPrefs.SetInt("HighScore", score);
+            PlayerPrefs.SetInt("HighScore_"+GM_NO, score);
         }
         if (is_Timed)
         {

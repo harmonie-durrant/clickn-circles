@@ -12,7 +12,10 @@ public class Game_Over : MonoBehaviour
     public TextMeshProUGUI highScoreText;
     public TextMeshProUGUI titleText;
     public TextMeshProUGUI mainMenuButton;
-
+    public TextMeshProUGUI BG_COUNT_Text;
+    public TextMeshProUGUI RED_COUNT_Text;
+    public TextMeshProUGUI GREEN_COUNT_Text;
+    public TextMeshProUGUI GOLD_COUNT_Text;
     // coroutine LoadNextScene
     IEnumerator LoadNextScene()
     {
@@ -48,7 +51,11 @@ public class Game_Over : MonoBehaviour
         }
         int score = Game_Logic.score;
         scoreText.text = "Your Score Was: " + score;
-        highScoreText.text = "Your High Score Is: " + PlayerPrefs.GetInt("HighScore");
+        highScoreText.text = "Your High Score Is: " + PlayerPrefs.GetInt("HighScore_"+Game_Logic.GM_NO);
+        BG_COUNT_Text.text = PlayerPrefs.GetInt("BG_HITS_"+Game_Logic.GM_NO).ToString();
+        RED_COUNT_Text.text = PlayerPrefs.GetInt("BAD_CIRCLE_HITS_"+Game_Logic.GM_NO).ToString();
+        GREEN_COUNT_Text.text = PlayerPrefs.GetInt("CIRCLE_HITS_"+Game_Logic.GM_NO).ToString();
+        GOLD_COUNT_Text.text = PlayerPrefs.GetInt("PW_CIRCLE_HITS_"+Game_Logic.GM_NO).ToString();
         // wait 5 sconds and then load the next scene
         StartCoroutine(LoadNextScene());
     }
