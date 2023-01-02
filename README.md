@@ -19,8 +19,8 @@ Download from itch.io or the play store using the links below:
 ## TODO / Goals
 
 - [📋] Update pc version to Version 3.0
-- [📋] Show high scores in menu.
-- [📋] Special powerup circles.
+- [✅] Show high scores in menu.
+- [✅] Special powerup circles.
 - [📋] Fix back to menu button on game over screen. 
 
 ## DEMO
